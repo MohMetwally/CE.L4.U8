@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Unit 8 Test · Places to Live</title>
+<meta name="description" content="Cutting Edge Pre-intermediate · Unit 8 test: Vocabulary, Grammar, Reading (50 questions)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap">
+<style>
+:root{
+  --bg:#eef1f4;--card:#ffffff;--ink:#18233a;--muted:#5d6878;--line:#d6dce4;
+  --accent:#6a4fc4;--accent-soft:#ece7fb;--accent-ink:#ffffff;--yellow:#f4c430;--yellow-soft:#fdf3cf;
+  --good:#1f8a5b;--good-bg:#e3f4ec;--bad:#c43c3c;--bad-bg:#fbe7e7;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;--body:"Atkinson Hyperlegible",system-ui,sans-serif;--ar:"IBM Plex Sans Arabic","Segoe UI",Tahoma,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;color:var(--ink);font:18px/1.55 var(--body);background:var(--bg);
+  -webkit-user-select:none;user-select:none}
+input,select{-webkit-user-select:text;user-select:text}
+.wrap{max-width:620px;margin:0 auto;padding:18px max(16px,env(safe-area-inset-left)) 120px}
+.ubanner{margin:0 0 14px;border-radius:16px;overflow:hidden;background:#fbfaf7;border:1px solid var(--line)}
+.ubanner img{display:block;width:100%;height:auto}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.15}
+h1{font-size:1.9rem;margin:0 0 4px}
+.sub{color:var(--muted);margin:0;font-size:.95rem}
+.ar{font-family:var(--ar);direction:rtl}
+.screen{display:none;flex-direction:column;gap:16px}
+.screen.on{display:flex}
+.head{display:flex;gap:12px;align-items:center}
+.head img{width:92px;height:auto;flex:none}
+.who{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:center;margin-top:16px}
+.who label{font-weight:700;white-space:nowrap}
+.who input,.who select{min-width:0;width:100%;font:1.05rem var(--body);padding:12px 14px;border-radius:10px;border:1.5px solid var(--line);background:#fff;color:var(--ink)}
+.who input:focus,.who select:focus{outline:none;border-color:var(--accent)}
+.btn{font:700 1.05rem var(--body);padding:13px 22px;border-radius:10px;border:0;background:var(--ink);color:#fff;cursor:pointer;min-height:52px}
+.btn.ghost{background:var(--card);color:var(--ink);border:1.5px solid var(--line)}
+.btn.acc{background:var(--accent);color:var(--accent-ink)}
+.btn:disabled{opacity:.35;cursor:default}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.msg{color:var(--bad);font-weight:700;min-height:1.4em;margin:0}
+/* quiz */
+.top{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:.88rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.tag{font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:var(--accent);border:1.5px solid var(--accent);padding:2px 10px;border-radius:99px}
+.bar{height:6px;background:var(--line);border-radius:99px;overflow:hidden}.bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}
+.passage{max-height:46vh;overflow:auto;background:var(--yellow-soft);border-color:#ecdca0}
+.passage h3{margin:0 0 8px;font-size:1.25rem}
+.passage p{margin:0 0 10px;font-size:1rem}
+.stem{font-family:var(--display);font-weight:600;font-size:1.3rem;line-height:1.35;margin:0 0 14px;text-wrap:balance}
+.stem .n{color:var(--accent);margin-right:6px}
+.opts{display:grid;gap:10px}
+.opt{display:flex;align-items:center;gap:12px;padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;cursor:pointer;background:#fff}
+.opt input{width:22px;height:22px;accent-color:var(--accent);flex:none;margin:0}
+.opt:has(input:checked){border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
+.nav{position:fixed;left:0;right:0;bottom:0;z-index:5;background:linear-gradient(to top,var(--bg) 70%,rgba(238,241,244,0));padding:16px 16px calc(16px + env(safe-area-inset-bottom))}
+.nav .in{max-width:620px;margin:0 auto;display:flex;justify-content:space-between;gap:12px}
+.nav .btn{flex:0 1 46%}
+.jump{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.jump button{font:700 1rem var(--body);min-width:46px;min-height:44px;border-radius:10px;border:1.5px solid var(--bad);background:var(--bad-bg);color:var(--bad);cursor:pointer}
+/* result */
+.score{font-family:var(--display);font-weight:800;font-size:3.2rem;line-height:1.05;font-variant-numeric:tabular-nums}
+.parts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.parts div{background:var(--accent-soft);border-radius:10px;padding:10px 4px;text-align:center;font-size:.92rem}
+.parts b{display:block;font-size:1.3rem;font-variant-numeric:tabular-nums}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.rv{display:flex;flex-direction:column;gap:6px;padding:14px 0;border-top:1.5px dashed var(--line)}
+.rv .q{font-weight:700}
+.rv .a{padding:8px 12px;border-radius:10px}
+.rv .a.ok{background:var(--good-bg);color:var(--good)}
+.rv .a.no{background:var(--bad-bg);color:var(--bad)}
+.rv .why{color:var(--muted);font-size:.95rem}
+footer{color:var(--muted);font-size:.85rem;text-align:center}
+@media print{.nav,.row,#send{display:none!important}body{background:#fff}.rv{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <figure class="ubanner"><img src="img/banner-u8.webp" width="1200" height="291" alt="Unit 8 · Places to Live"></figure>
+
+  <!-- START -->
+  <section class="screen on" id="s-start">
+    <div class="card">
+      <div class="head"><img src="img/quiz.webp" width="300" height="200" alt=""><div>
+        <h1>Unit 8 Test</h1>
+        <p class="sub">Cutting Edge Pre-intermediate · 50 questions: Vocabulary, Grammar, Reading</p></div></div>
+      <div class="who">
+        <label for="nm">Name:</label>
+        <input id="nm" type="text" placeholder="e.g. Ahmed Ali" maxlength="40" autocomplete="name">
+        <label for="eid">ET ID#:</label>
+        <input id="eid" type="text" placeholder="e.g. 4412345" maxlength="20" inputmode="numeric" autocomplete="off">
+        <label for="grp">Group:</label>
+        <select id="grp"><option value="">Choose…</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option><option>I</option><option>J</option><option>K</option><option>L</option><option>M</option></select>
+      </div>
+    </div>
+    <p class="sub">Write your details and press <b>Start</b>. There is one question on each page. Press <b>Next</b> to go forward and <b>Previous</b> to go back.</p>
+    <p class="msg" id="smsg"></p>
+    <button class="btn acc" id="start" type="button">Start ➜</button>
+    <footer>© 2026 Metwally · Cutting Edge Pre-intermediate · Unit 8</footer>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="screen" id="s-quiz">
+    <div class="top"><span class="tag" id="qpart"></span><span id="qnum"></span></div>
+    <div class="bar"><i id="qbar"></i></div>
+    <div class="card passage" id="qpass" hidden></div>
+    <div class="card" id="qcard"></div>
+  </section>
+
+  <!-- CHECK BLANKS -->
+  <section class="screen" id="s-blank">
+    <div class="card">
+      <h2 style="margin:0 0 6px;font-size:1.5rem">Some questions are empty</h2>
+      <p class="sub">Tap a number to go back to that question, or press Finish anyway.</p>
+      <div class="jump" id="jump"></div>
+    </div>
+    <div class="row"><button class="btn ghost" id="back" type="button">← Back</button><button class="btn" id="force" type="button">Finish anyway</button></div>
+  </section>
+
+  <!-- RESULT -->
+  <section class="screen" id="s-res">
+    <div class="card">
+      <div class="head"><img src="img/results.webp" width="300" height="200" alt=""><div>
+        <div class="sub" id="rname"></div>
+        <div class="score" id="rscore"></div></div></div>
+      <div id="rmsg" style="margin-top:8px"></div>
+      <div class="parts"><div>Vocabulary<b id="rA"></b></div><div>Grammar<b id="rB"></b></div><div>Reading<b id="rC"></b></div></div>
+      <p class="sub" id="send" style="margin-top:12px"></p>
+      <div class="row" style="margin-top:12px">
+        <button class="btn ghost" id="resend" type="button" hidden>Send again</button>
+        <button class="btn acc" id="again" type="button">Try again</button>
+        <button class="btn ghost" id="print" type="button">Print / Save as PDF</button>
+      </div>
+    </div>
+    <div class="card"><div class="head"><img src="img/review.webp" width="300" height="200" alt="" style="width:72px"><h2 style="margin:0;font-size:1.5rem">Your answers</h2></div><div id="review"></div></div>
+    <footer>© 2026 Metwally · Cutting Edge Pre-intermediate · Unit 8</footer>
+  </section>
+</div>
+
+<nav class="nav" id="nav" hidden><div class="in">
+  <button class="btn ghost" id="prev" type="button">← Previous</button>
+  <button class="btn" id="next" type="button">Next →</button>
+</div></nav>
+
+<script>
+/* ===== Where results go (same Google Form / Sheet as the Unit 6 and 7 tests) ===== */
+/* Google Form "pre-filled link". Questions in this order: Name, ET ID, Group, Score, Percentage, Test */
+const FORM_LINK = "https://docs.google.com/forms/d/e/1FAIpQLSfIyKgOjaWwy1AVIxiXCwNE-YpUmJNfm5rVknf0qRN1GU0QSw/viewform?usp=pp_url&entry.1420658327=1&entry.988858162=2&entry.1107879298=3&entry.1171550918=4&entry.844294529=5&entry.1724463703=6";
+const TEST_NAME = "Unit 8 Test";
+
+const T1 = {title:"Text 1 – Wyndham, Australia", text:[
+ "Fancy a warm climate? Then come to Wyndham, a small town in the north-west of Australia. It's the hottest town in Australia which is permanently inhabited – people live there all year round. The temperature stays between 31 and 39°C all year.",
+ "Wyndham is situated by the sea, and it's close to thousands of miles of unspoilt countryside. The countryside is mostly desert and hills.",
+ "There is also spectacular scenery, including the Five Rivers Lookout. From the top of a hill, you can see five rivers flowing into the sea."]};
+const T2 = {title:"Text 2 – Tristan da Cunha", text:[
+ "Tristan da Cunha is a small island in the middle of the Atlantic Ocean. It's the most remote inhabited place in the world – the nearest neighbours are 2,816 km away.",
+ "About 250 people live there permanently. Most of them are farmers or fishermen. There is no airport, so the only way to get there is by boat. The journey takes about a week.",
+ "On the island there are no shopping malls, no traffic lights and no traffic congestion! But there is a lot of spectacular scenery: a high mountain, green hills and black beaches."]};
+
+/* Each question: [part, stem, [options a–c], index of correct option, short reason] */
+const Q = [
+["A","There are lots of good ___ in my town, so I cycle to work.",["traffic lights","cycle lanes","recycling bins"],1,"cycle lane = مسار خاص للسياكل."],
+["A","I don't have a garden because I live in a ___ in the city centre.",["high-rise apartment block","pedestrian zone","green space"],0,"high-rise apartment block = عمارة شقق عالية، ما فيها حديقة."],
+["A","I don't like driving to work because there is so much traffic ___.",["lights","zone","congestion"],2,"traffic congestion = زحمة سير."],
+["A","Cars can't go into the old market any more. It's a ___ now.",["one-way street","pedestrian zone","residential area"],1,"pedestrian zone = منطقة للمشاة بس، ممنوع السيارات."],
+["A","Please put your empty plastic bottles in the ___.",["recycling bin","cycle lane","shopping mall"],0,"recycling bin = حاوية إعادة تدوير."],
+["A","I don't need a car because the ___ in my city is very good.",["green space","traffic congestion","public transport"],2,"public transport = المواصلات العامة زي الباص والقطار."],
+["A","Masdar City plans to be the first ___ city in the world.",["carbon-neutral","one-way","high-rise"],0,"carbon-neutral = ما يزيد ثاني أكسيد الكربون في الجو."],
+["A","We had a lovely holiday on a small ___ in the Caribbean.",["valley","island","desert"],1,"island = جزيرة، حولها مويه من كل جهة."],
+["A","Temperatures in the ___ sometimes get up to 48°C.",["ocean","forest","desert"],2,"desert = صحرا، حارة ونشفة."],
+["A","It took us five hours to climb to the top of the ___.",["mountain","coast","beach"],0,"mountain = جبل."],
+["A","There was snow at the top of the mountains, but not in the ___.",["island","valley","sea"],1,"valley = وادي، أرض واطية بين الجبال."],
+["A","A ___ is like a small mountain.",["hill","valley","river"],0,"hill = تل، جبل صغير."],
+["A","The Himalayas are a famous ___.",["coast","mountain range","desert"],1,"mountain range = سلسلة جبال."],
+["A","Ottawa is the ___ of Canada.",["continent","home town","capital city"],2,"capital city = العاصمة."],
+["A","The nearest neighbours are 2,816 km away. It's a very ___ place.",["remote","unspoilt","inhabited"],0,"remote = بعيد ومعزول عن الناس."],
+["A","An island with no people living on it is ___.",["inhabited","uninhabited","situated"],1,"uninhabited = ما فيه سكان."],
+["A","Go ___ the cinema. The hotel is next to it.",["pass","passed","past"],2,"go past = تعدّى، امش جنبه وكمّل."],
+["A","___ the road at the traffic lights.",["Cross","Turn","Take"],0,"cross the road = اقطع الشارع."],
+
+["B","I saw ___ beautiful vase in an antique shop.",["the","a","an"],1,"أول مرة نذكر الشي نستخدم a، و beautiful تبدأ بحرف ساكن."],
+["B","I saw a vase in a shop. When I went back, ___ vase wasn't there.",["the","a","— (no article)"],0,"ذكرناه قبل، فنستخدم the."],
+["B","___ Sun is much bigger than the Earth.",["A","— (no article)","The"],2,"الشمس وحدة بس، فنقول the Sun."],
+["B","The Nile is ___ longest river in the world.",["a","the","— (no article)"],1,"مع صيغة التفضيل (superlative) نستخدم the."],
+["B","___ dogs make very good pets.",["The","A","— (no article)"],2,"نتكلم عن الكلاب بشكل عام، فما نحط أداة."],
+["B","I'm usually at ___ home in the evening.",["the","a","— (no article)"],2,"نقول at home بدون أداة."],
+["B","Go past the gym, and Oak Road is on ___ left.",["the","a","— (no article)"],0,"نقول on the left / on the right."],
+["B","Which sentence is correct?",["The Asia is bigger than Europe.","Asia is bigger than Europe.","Asia is bigger than the Europe."],1,"القارات ما ناخذ معها أداة."],
+["B","Which one is correct?",["the Mount Fuji","the Egypt","the Rocky Mountains"],2,"سلاسل الجبال ناخذ معها the، بس الجبل الواحد والدول لا."],
+["B","___ Lake Superior is one of the largest lakes in the world.",["— (no article)","The","A"],0,"البحيرات ما ناخذ معها أداة."],
+["B","Which one is correct?",["United Arab Emirates","the United Arab Emirates","a United Arab Emirates"],1,"الدول اللي اسمها فيه United ناخذ معها the."],
+["B","There aren't ___ places to stay on the island.",["some","much","any"],2,"في النفي مع الجمع نستخدم any."],
+["B","My flat's got a nice view, but there isn't ___ space.",["much","many","a few"],0,"space غير معدود، وفي النفي نقول much."],
+["B","There aren't ___ people living in the desert now.",["much","many","a lot"],1,"people معدود، وفي النفي نقول many."],
+["B","I'm often late for work because there are ___ cars on the road.",["too much","much","too many"],2,"cars معدود + أكثر من اللازم = too many."],
+["B","You can't swim in the river because there is ___ pollution.",["too much","too many","a few"],0,"pollution غير معدود + أكثر من اللازم = too much."],
+["B","I'm sorry, but there's ___ time for us to stop.",["any","no","many"],1,"no تجي مع فعل مثبت (there's no) ومعناها not any."],
+["B","There aren't ___ chairs for everyone.",["much","too much","enough"],2,"not enough = أقل من اللازم، ما يكفي."],
+["B","Would you like ___ more water?",["some","many","a few"],0,"لما نعرض شي (offer) نستخدم some في السؤال."],
+["B","Which noun is uncountable?",["mountain","traffic","island"],1,"traffic ما له جمع، فهو غير معدود."],
+
+["C1","Where is Wyndham?",["in the north-west of Australia","in the south of Australia","on an island"],0,"“a small town in the north-west of Australia”"],
+["C1","What is the temperature like all year?",["between 21 and 29°C","between 31 and 39°C","over 48°C"],1,"“The temperature stays between 31 and 39°C all year.”"],
+["C1","What is special about Wyndham?",["It's the biggest town in Australia.","It's the most remote town in Australia.","It's the hottest town where people live all year round."],2,"“It's the hottest town in Australia which is permanently inhabited”"],
+["C1","Where is Wyndham situated?",["by the sea","in a valley","in a forest"],0,"“Wyndham is situated by the sea”"],
+["C1","What is the countryside like?",["mostly forests and lakes","mostly desert and hills","mostly beaches"],1,"“The countryside is mostly desert and hills.”"],
+["C1","What can you see from the Five Rivers Lookout?",["five mountains","five islands","five rivers flowing into the sea"],2,"“you can see five rivers flowing into the sea”"],
+["C2","Where is Tristan da Cunha?",["in the middle of the Atlantic Ocean","in the Pacific Ocean","near the coast of Australia"],0,"“a small island in the middle of the Atlantic Ocean”"],
+["C2","How far away are the nearest neighbours?",["281 km","2,816 km","28,160 km"],1,"“the nearest neighbours are 2,816 km away”"],
+["C2","How many people live there permanently?",["about 25","about 2,500","about 250"],2,"“About 250 people live there permanently.”"],
+["C2","How can you get to the island?",["only by boat","by plane","by boat or by plane"],0,"“There is no airport, so the only way to get there is by boat.”"],
+["C2","Which of these does the island NOT have?",["beaches","traffic lights","a mountain"],1,"“there are no shopping malls, no traffic lights …”"],
+["C2","What do most people on the island do?",["They work in shopping malls.","They work in the capital city.","They are farmers or fishermen."],2,"“Most of them are farmers or fishermen.”"]
+];
+
+const PART_NAME = {A:"Vocabulary", B:"Grammar", C:"Reading"};
+const L = "abc", KEY = "ce-u8-test1";
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+let st = {name:"", eid:"", grp:"", ans:{}, i:0, done:false};
+try { Object.assign(st, JSON.parse(localStorage.getItem(KEY) || "{}")); } catch(e) {}
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch(e) {} };
+$("nm").value = st.name; $("eid").value = st.eid; $("grp").value = st.grp;
+["nm","eid","grp"].forEach(id => { const el = $(id); const f = () => { st[{nm:"name",eid:"eid",grp:"grp"}[id]] = el.value; save(); };
+  el.addEventListener("input", f); el.addEventListener("change", f); });
+
+function show(id){ document.querySelectorAll(".screen").forEach(s => s.classList.toggle("on", s.id === id));
+  $("nav").hidden = id !== "s-quiz"; window.scrollTo(0,0); }
+
+function passageHtml(t){ return `<h3>${esc(t.title)}</h3>` + t.text.map(p => `<p>${esc(p)}</p>`).join(""); }
+const isAr = s => /[؀-ۿ]/.test(s);
+
+function render(){
+  const i = st.i, q = Q[i], p = q[0][0];
+  $("qpart").textContent = `Part ${p} · ${PART_NAME[p]}`;
+  $("qnum").textContent = `Question ${i+1} / ${Q.length}`;
+  $("qbar").style.width = ((i+1) / Q.length * 100) + "%";
+  const pass = q[0] === "C1" ? T1 : q[0] === "C2" ? T2 : null;
+  $("qpass").hidden = !pass; if (pass) { $("qpass").innerHTML = passageHtml(pass); $("qpass").scrollTop = 0; }
+  $("qcard").innerHTML = `<p class="stem"><span class="n">${i+1}.</span>${esc(q[1])}</p><div class="opts" role="radiogroup">` +
+    q[2].map((o,j) => `<label class="opt"><input type="radio" name="a" value="${j}" ${st.ans[i]==j?"checked":""}><span><b>${L[j]})</b> ${esc(o)}</span></label>`).join("") + `</div>`;
+  $("qcard").querySelectorAll("input").forEach(r => r.onchange = () => { st.ans[i] = +r.value; save(); });
+  $("prev").disabled = i === 0;
+  $("next").textContent = i === Q.length - 1 ? "Finish ✓" : "Next →";
+  $("next").classList.toggle("acc", i === Q.length - 1);
+  window.scrollTo(0,0);
+}
+function go(i){ st.i = Math.max(0, Math.min(Q.length - 1, i)); save(); render(); }
+$("prev").onclick = () => go(st.i - 1);
+$("next").onclick = () => { if (st.i < Q.length - 1) go(st.i + 1); else finish(false); };
+
+$("start").onclick = () => {
+  const need = [["nm","your name"],["eid","your ET ID#"],["grp","your group"]].find(([id]) => !$(id).value.trim());
+  if (need) { $("smsg").textContent = `Please write ${need[1]} first.`; $(need[0]).focus(); return; }
+  $("smsg").textContent = ""; show("s-quiz"); render();
+};
+
+function blanks(){ return Q.map((q,i) => i).filter(i => st.ans[i] === undefined); }
+function finish(force){
+  const b = blanks();
+  if (b.length && !force) {
+    $("jump").innerHTML = b.map(i => `<button type="button" data-i="${i}">${i+1}</button>`).join("");
+    show("s-blank"); return;
+  }
+  grade(true);
+}
+$("jump").onclick = e => { const t = e.target.closest("button[data-i]"); if (t) { show("s-quiz"); go(+t.dataset.i); } };
+$("back").onclick = () => { show("s-quiz"); render(); };
+$("force").onclick = () => finish(true);
+
+let lastResult = null;
+function grade(send){
+  const score = {A:[0,0],B:[0,0],C:[0,0]};
+  let rv = "";
+  Q.forEach((q,i) => { const p = q[0][0], a = st.ans[i], ok = a === q[3]; score[p][1]++; if (ok) score[p][0]++;
+    rv += `<div class="rv"><div class="q">${i+1}. ${esc(q[1])}</div>` +
+      `<div class="a ${ok?"ok":"no"}">${ok ? "✓ " : "✗ "}Your answer: ${a === undefined ? "—" : L[a] + ") " + esc(q[2][a])}</div>` +
+      (ok ? "" : `<div class="a ok">Correct: ${L[q[3]]}) ${esc(q[2][q[3]])}</div>`) +
+      `<div class="why${isAr(q[4]) ? " ar" : ""}">${esc(q[4])}</div></div>`; });
+  const total = score.A[0] + score.B[0] + score.C[0], pct = Math.round(total / Q.length * 100);
+  $("rname").textContent = `${st.name} · ET ID# ${st.eid} · Group ${st.grp}`;
+  $("rscore").textContent = `${total} / ${Q.length}`;
+  $("rmsg").innerHTML = `${pct}% — ` + (pct >= 85 ? "Excellent!" : pct >= 60 ? "Good. Check the questions in red." : "Keep practising. Review Unit 8 and try again.");
+  for (const p of "ABC") $("r"+p).textContent = `${score[p][0]} / ${score[p][1]}`;
+  $("review").innerHTML = rv;
+  lastResult = {name:st.name, eid:st.eid, grp:st.grp, total, max:Q.length, pct};
+  show("s-res");
+  if (send && !st.done) { st.done = true; save(); sendResult(); }
+  else if (st.done) $("send").textContent = "✓ Result sent to the teacher.";
+}
+
+function formTarget(){
+  if (!FORM_LINK) return null;
+  try { const u = new URL(FORM_LINK);
+    const ids = [...u.searchParams.keys()].filter(k => /^entry\.\d+$/.test(k));
+    return {url: u.origin + u.pathname.replace(/\/(viewform|edit|formResponse)$/, "") + "/formResponse", ids};
+  } catch(e) { return null; }
+}
+async function sendResult(){
+  const s = $("send"), rb = $("resend"); rb.hidden = true;
+  const f = formTarget();
+  if (!f) { s.textContent = ""; return; }
+  s.textContent = "Sending your result to the teacher…";
+  const r = lastResult, body = new URLSearchParams();
+  [r.name, r.eid, r.grp, `${r.total} / ${r.max}`, r.pct + "%", TEST_NAME].forEach((v,i) => { if (f.ids[i]) body.append(f.ids[i], v); });
+  try { await fetch(f.url, {method:"POST", mode:"no-cors", body});
+    s.textContent = "✓ Result sent to the teacher.";
+  } catch(e) {
+    s.textContent = "✗ The result was not sent. Check the internet and press Send again.";
+    rb.hidden = false;
+  }
+}
+$("resend").onclick = sendResult;
+$("again").onclick = () => { st.ans = {}; st.i = 0; st.done = false; save(); show("s-start"); };
+$("print").onclick = () => window.print();
+
+/* resume where the student was */
+if (st.done) grade(false);
+else if (st.name && st.eid && st.grp && Object.keys(st.ans).length) { show("s-quiz"); render(); }
+
+/* keyboard: ← → */
+document.addEventListener("keydown", e => { if (!$("s-quiz").classList.contains("on")) return;
+  if (e.key === "ArrowRight") $("next").click(); if (e.key === "ArrowLeft" && st.i > 0) $("prev").click(); });
+
+/* light copy protection */
+document.addEventListener("contextmenu", e => { if (!e.target.closest("input")) e.preventDefault(); });
+document.addEventListener("copy", e => e.preventDefault());
+</script>
+</body>
+</html>
